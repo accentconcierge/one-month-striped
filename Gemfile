@@ -21,6 +21,8 @@ gem 'bootstrap-sass'
 #Add stripe for payment processing
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
+#figaro gem for securely managing credentials
+gem "figaro", "~> 0.7.0"
 
 
 # Use SCSS for stylesheets
