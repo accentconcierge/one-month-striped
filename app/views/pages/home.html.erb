@@ -1,14 +1,4 @@
 
-
-<div id="content" class="container">
-    <header id="content-header">
-        <div id="price-container">
-          <span class="glyphicon glyphicon-tag"></span><span class="price">$4.99</span>
-        </div>
-       
-
-        <%= image_tag('header-image.jpg', id: "content-header-img", alt: "Learn Growth Hacking") %>
-  
     <section id="content-details" class="row clearfix">
         <article id="details-article" class="col-sm-8">
             <h1 id="article-title">Growth Hacking <span class="font-weight-light">Crash Course</span></h1>
@@ -27,8 +17,8 @@
         </article>
         <aside id="details-aside" class="col-sm-4">
         
-                  <%= form_tag charges_path id: 'chargeForm' do %>
-            <script src="https://checkout.stripe.com/checkout.js"></script>
+                  <%= form_tag charges_path, id: 'chargeForm' do %>
+            <script src="https://checkout.stripe.com/checkout.js">  </script>
             <%= hidden_field_tag 'stripeToken' %>
             <%= hidden_field_tag 'stripeEmail' %> 
             <%= hidden_field_tag 'amount', 499 %>  
@@ -51,6 +41,7 @@
             e.preventDefault();
            })
           </script>
+
         <% end %>
 
 
