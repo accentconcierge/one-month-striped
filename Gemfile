@@ -18,12 +18,15 @@ gem 'rails_12factor', group: :production
 
 gem 'bootstrap-sass'
 
+gem 'activeadmin', github: 'gregbell/active_admin'
+
 #Add stripe for payment processing
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
 #figaro gem for securely managing credentials
 gem "figaro", "~> 0.7.0"
 
+gem 'devise'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
